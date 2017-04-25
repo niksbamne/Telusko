@@ -53,7 +53,7 @@ footer{
 .logoContainer{
 	float: left;
 }
-
+	
 	
 /*Pop up label for form*/
 form div.dynamiclabel{ /* div container for each form field with pop up label */
@@ -104,24 +104,16 @@ form div.dynamiclabel > *:focus + label{ /* label style when user focuses on chi
   transform: rotate(-3deg);
 }
 /*end of Pop up label animation*/
+
 #sitemap li a{
 	text-decoration:none;
 	color:#fff;
 	text-align:center;
 }
-@keyframes rotate{
-	0%{-webkit-transform:rotate(-20deg);transform:rotate(-20deg);}
-	20%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg);}
-	40%{-webkit-transform:rotate(0deg);transform:rotate(0deg);}
-	60%{-webkit-transform:rotate(10deg);transform:rotate(10deg);}
-	80%{-webkit-transform:rotate(20deg);transform:rotate(20deg);}
-	100%{-webkit-transform:rotate(0deg);transform:rotate(0deg);}
-}
-#followus .logoContainer:hover{
-	animation-name:rotate;
-	animation-duration:0.2s;
-}
 
+/*Media queries for adjusting the menu items when resizing as it was collapsing
+  Adjusted padding and margin of the anchor tags
+*/
 @media (min-width: 767px) and (max-width: 881px){
 	#navbarContainer a{
 		margin-top:0;
@@ -131,4 +123,17 @@ form div.dynamiclabel > *:focus + label{ /* label style when user focuses on chi
 	#navbarMenuItems ul li a{
 		line-height:60px;
 	}
+}
+
+/*Footer animation*/
+@keyframes boom{
+	0%{-ms-transform: rotate(-10deg);-webkit-transform: rotate(-10deg);transform: rotate(-10deg);}
+	25%{-ms-transform: rotate(10deg);-webkit-transform: rotate(10deg);transform: rotate(10deg);}
+	50%{-ms-transform: rotate(-5deg);-webkit-transform: rotate(-5deg);transform: rotate(-5deg);}
+	75%{-ms-transform: rotate(5deg);-webkit-transform: rotate(5deg);transform: rotate(5deg);}
+	100%{-ms-transform: rotate(0deg);-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+}
+.logocontainer:hover{
+	animation-name:boom;
+	animation-duration:0.5s;
 }
