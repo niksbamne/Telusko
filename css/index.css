@@ -26,11 +26,39 @@
 	font-size:18px;
 	font-weight:bold;
 }
-	
+#maincontent{
+	margin-top:30px;
+}
+#tablet{
+	height:200px;
+	background-image:url(../img/tablet.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	overflow:hidden;
+}
+.contentVideo{
+	height:175px;
+	width:60%;
+	position:absolute;
+	top:10px;
+	left:70px;
+}
+#throughVideos h5{
+	font-size:25px;
+	font-weight:bold;
+}
+#throughVideos p{
+	font-size:18px;
+	line-height:40px;;
+}
+
+/*Media query to adjust the height of video BG and also button alignment in XS*/
+
 @media (min-width: 300px) and (max-width: 444px){
 #videoContainer{
 	width:100%;
-	height:auto;
+	height:300px;
 	overflow:hidden;
 	margin-top:80px;
 }
@@ -43,12 +71,13 @@
 	position:absolute;
 	top:10px;
 	left:25px;
+	font-size:14px;
 }
 }
 @media (min-width: 0px) and (max-width: 299px){
 	#videoContainer{
 	width:100%;
-	height:auto;
+	height:300px;
 	overflow:hidden;
 	margin-top:80px;
 }
@@ -56,10 +85,100 @@
 	width:140px;
 	background:#d87002;
 	color:#ffffff;
+	font-size:14px;
 	border:none;
 	font-weight:bold;
 	position:absolute;
 	top:25px;
 	left:25px;
 }
+}
+
+@media (min-width:795px) and (max-width:825px){
+	#heroSection{
+		height:470px;
+	}
+	#carouselContainer{
+		height:390px;
+	}
+	#throughVideos p{
+		font-size:16px;
+		line-height:30px;
+	}
+}
+@media (min-width:695px) and (max-width:795px){
+	#heroSection{
+		height:400px;
+	}
+	#videoContainer{
+		height:400px;
+	}
+	#carouselContainer{
+		height:340px;
+	}
+	#carouselContainer img{
+		height:350px;
+		width:100%;
+	}
+	#throughVideos p{
+		font-size:16px;
+		line-height:30px;
+	}
+	
+}
+@media (min-width:443px) and (max-width:692px){
+	#heroSection{
+		height:350px;
+	}
+	#videoContainer{
+		height:350px;
+	}
+	#videoBg{
+		height:350px;
+	}
+	#carouselContainer{
+		height:265px;
+	}
+	#carouselContainer img{
+		height:265px;
+		width:100%;
+	}
+	#throughVideos p{
+		font-size:14px;
+		line-height:20px;
+	}
+}
+@media (max-width:443px){
+	#heroSection{
+		height:300px;
+	}
+	#videoContainer{
+		height:300px;
+		margin-top:0;
+	}
+	#videoBg{
+		height:300px;
+	}
+	#carouselContainer{
+		height:200px;
+	}
+	#throughVideos p{
+		font-size:14px;
+		line-height:15px;
+	}	
+}
+@media (max-width:300px){
+	#heroSection{
+		height:250px;
+	}
+	#videoContainer{
+		height:250px;
+		margin-top:0;
+	}
+	#videoBg{
+		height:300px;
+	}
+	#carouselContainer{
+		height:150px;
+	}
 }

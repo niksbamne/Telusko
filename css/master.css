@@ -123,6 +123,9 @@ form div.dynamiclabel > *:focus + label{ /* label style when user focuses on chi
 	#navbarMenuItems ul li a{
 		line-height:60px;
 	}
+	#navbarMenuItems ul button{
+		margin-top:20px;
+	}
 }
 
 /*Footer animation*/
