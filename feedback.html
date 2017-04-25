@@ -35,8 +35,8 @@
                     <li><a href="test.html"><span class="glyphicon glyphicon-pencil"></span>&nbsp; Test</a></li>
                     <li><a href="feedback.html" style="color:#d87002;"><span class="glyphicon glyphicon-star-empty"></span>&nbsp; Feedback</a></li>
                     <li><a href="about.html"><span class="glyphicon glyphicon-tag"></span>&nbsp; About us</a></li>
-                    <li><button type="button" name="signin" id="siginBtn" data-target="#loginModal" data-toggle="modal" class="btn"><span class="glyphicon glyphicon-user" style="color:#ffffff"></span> Sign in</button></li>
-                    <li style="margin-right:2px;"><button type="button" name="signup" id="signupBtn" data-target="#signupModal" data-toggle="modal" class="btn">Sign up</button></li>
+                    <li><button type="button" name="signin" id="siginBtn" data-target=".loginModal" data-toggle="modal" class="btn"><span class="glyphicon glyphicon-user" style="color:#ffffff"></span> Sign in</button></li>
+                    <li style="margin-right:2px;"><button type="button" name="signup" id="signupBtn" data-target=".signupModal" data-toggle="modal" class="btn">Sign up</button></li>
                 </ul>
             </div><!--End of navbarMenuItems-->
         </div><!--End of navbarContainer-->
@@ -95,7 +95,7 @@
     </div>
     
     <!--Start of loginModal-->
-    <div class="modal fade" tabindex="-1" id="loginModal">
+    <div class="modal fade loginModal" tabindex="-1">
     	<div class="modal-dialog">
         	<div class="modal-content">
             	<div class="modal-header" style="background:#333;color:#ffffff;">
@@ -125,7 +125,7 @@
     </div><!--End of loginModal-->
     
     <!--Start od singupModal-->
-    <div class="modal fade" tabindex="-1" id="signupModal">
+    <div class="modal fade signupModal" tabindex="-1">
     	<div class="modal-dialog">
         	<div class="modal-content">
             	<div class="modal-header" style="background:#333;color:#ffffff;">

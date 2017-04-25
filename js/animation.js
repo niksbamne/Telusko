@@ -1,4 +1,6 @@
 // JavaScript Document
+$(".carousel").carousel();
+
 var navHeader,Ypos;
 
 function YScroll(){
