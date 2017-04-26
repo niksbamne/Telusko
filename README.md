@@ -1,1 +1,1 @@
-# Telusko
+Redesigning of Telusko website
