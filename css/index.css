@@ -29,14 +29,7 @@
 #maincontent{
 	margin-top:30px;
 }
-#tablet{
-	height:200px;
-	background-image:url(../img/tablet.png);
-	background-repeat:no-repeat;
-	background-size:contain;
-	background-position:center;
-	overflow:hidden;
-}
+
 .contentVideo{
 	height:175px;
 	width:60%;
@@ -44,14 +37,80 @@
 	top:10px;
 	left:70px;
 }
-#throughVideos h5{
+.contentTitle{
 	font-size:25px;
 	font-weight:bold;
 }
-#throughVideos p{
+.contentPara{
 	font-size:18px;
-	line-height:40px;;
+	line-height:30px;;
 }
+.spacing{
+	margin-top:30px;
+	margin-bottom:30px;
+}
+#firstRow{
+	padding:20px;
+}
+
+#learnVideo{
+	height:200px;
+	border-radius:10px;
+	border:15px solid #333;
+	box-shadow:5px 5px 5px #000;	
+}
+
+#secondRow{
+	padding:20px;
+	background:#498e2b;
+	color:#fff;
+	box-shadow:2px 5px 5px #333;
+}
+#secondRow h5,p{
+	padding:10px 0;
+}
+.animHolder{
+	background:#000;
+	color:lime;
+	border:10px solid #fff;
+	border-radius:10px;
+}
+.typewriter p{
+	overflow:hidden;
+	white-space:nowrap;
+	line-height:25px;
+	margin:0 auto;
+	letter-spacing:.15em;
+	animation:typing 10s steps(100,end);
+	padding:10px;
+}
+.contentLinks{
+	text-decoration:none;
+	margin:30px 0;
+	padding:10px;
+	background:#d87002;
+	color:#fff;
+	border-radius:5px;
+	font-size:16px;
+	font-weight:bold;
+	box-shadow:2px 2px 5px #333;
+}
+.contentLinks:hover{
+	text-decoration:none;
+	background:#393892;
+	color:#fff;
+}
+.contentLinks:visited{
+	text-decoration:none;
+	color:#fff;
+}
+/*Animations*/
+/*Typing animation*/
+@keyframes typing{
+	from{width:0;}
+	to{width:100%;}
+}
+
 
 /*Media query to adjust the height of video BG and also button alignment in XS*/
 
@@ -101,7 +160,7 @@
 	#carouselContainer{
 		height:390px;
 	}
-	#throughVideos p{
+	.contentPara{
 		font-size:16px;
 		line-height:30px;
 	}
@@ -120,7 +179,7 @@
 		height:350px;
 		width:100%;
 	}
-	#throughVideos p{
+	.contentPara{
 		font-size:16px;
 		line-height:30px;
 	}
@@ -128,27 +187,27 @@
 }
 @media (min-width:443px) and (max-width:692px){
 	#heroSection{
-		height:350px;
+		height:300px;
 	}
 	#videoContainer{
-		height:350px;
+		height:300px;
 	}
 	#videoBg{
-		height:350px;
+		height:340px;
 	}
 	#carouselContainer{
-		height:265px;
+		height:235px;
 	}
 	#carouselContainer img{
 		height:265px;
 		width:100%;
 	}
-	#throughVideos p{
-		font-size:14px;
+	.contentPara{
+		font-size:16px;
 		line-height:20px;
 	}
 }
-@media (max-width:443px){
+@media (min-width:301px) and (max-width:443px){
 	#heroSection{
 		height:300px;
 	}
@@ -162,23 +221,33 @@
 	#carouselContainer{
 		height:200px;
 	}
-	#throughVideos p{
+	.contentTitle{
+		font-size:19px;
+	}
+	.contentPara{
 		font-size:14px;
 		line-height:15px;
 	}	
 }
-@media (max-width:300px){
+@media (min-width:200px) and (max-width:340px){
 	#heroSection{
-		height:250px;
+		height:200px;
 	}
 	#videoContainer{
 		height:250px;
 		margin-top:0;
 	}
 	#videoBg{
-		height:300px;
+		height:250px;
 	}
 	#carouselContainer{
-		height:150px;
+		height:158px;
+	}
+	.contentTitle{
+		font-size:18px;
+	}
+	.contentPara{
+		font-size:14px;
+		line-height:15px;
 	}
 }
