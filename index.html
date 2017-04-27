@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="Karthik Rajendran">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -26,6 +26,7 @@
                 </button>
                 <a href="index.html" class="navbar-brand"><img src="img/logo1.png" alt="Telusko Logo" class="img-responsive"></a>
             </div><!--End of navbar-header-->
+            
             <!--start of navbarMenuItems-->
             <div class="collapse navbar-collapse" id="navbarMenuItems">
             	<ul class="nav navbar-nav navbar-right">
@@ -90,12 +91,13 @@
         	<div class="row spacing" id="firstRow">
             	<div class="col-md-12 col-sm-12 col-xs-12">
                 	<div class="col-md-6 col-sm-6 col-xs-12" id="learnVideoContainer">
- 						<video autoplay muted loop id="learnVideo" class="col-md-offset-2 col-sm-offset-2">
+ 						<video autoplay muted loop id="learnVideo" class="col-md-offset2 col-sm-offset-2">
                         	<source src="video_bg/tutorial_video.mp4"/>
                         </video>
                     </div>
-                	<div class="col-md-6 col-sm-6 col-xs-12" id="throughVideos">
+                	<div class="col-md-6 col-sm-6 col-xs-12 " id="throughVideos">
                     	<h5 class="contentTitle">Learn through Videos</h5>
+                        <hr style="background:#000;height:1px;">
                         <p class="contentPara">Want to make learning more exciting! Here it is. We come up with interesting videos of Navin Reddy who cover ups all the subjects related to Programming. A long listed series of Videos covering concepts from basic C Programming to High Level Java Programming. So go ahead and enjoy learning.</p>
                         <a href="#" class="contentLinks">Explore our Videos</a>
                     </div>
@@ -105,23 +107,18 @@
             	<div class="col-md-12 col-sm-12 col-xs-12">
                 	<div class="col-md-6 col-sm-6 col-xs-12">
                     	<h5 class="contentTitle">Get Free Codes</h5>
+                        <hr>
                         <p class="contentPara">
                         A code on a click. Get basic and tricky free codes all on your finger tips. This includes a wide range of codes like Encapsulation, Inheritance, Armstrong Number etc. Not just that, you can now even save and share the codes with your friends. Have a great time coding.</p>
                         <a href="#" class="contentLinks">Happy Coding</a>
+                        <div class="spacing"></div>
                     </div>
                 	<div class="col-md-6 col-sm-6 col-xs-12 animHolder">
-                    	<div class="typewriter">
-                        	<p>public static void main(String [] args) throws Exception{</p>
-                            <p>	&nbsp;int x=10,y=15;</p>
-                            <p>&nbsp;public void add(){ </p>
-                            <p>&nbsp;&nbsp;int result = x+y;</p>
-                            <p>&nbsp;&nbsp;System.out.println(result);</p>
-                            <p>  &nbsp;}</p>
-                            <p> }</p>
-                        </div>
+                    	<div class="element"></div>
                     </div>
                 </div>
             </div>
+            <div class="spacing">
         	<div class="row spacing" id="thirdRow">
             	<div class="col-md-12 col-sm-12 col-xs-12">
                 	<div class="col-md-6 col-sm-6 col-xs-12" >
@@ -129,6 +126,7 @@
                     </div>
                 	<div class="col-md-6 col-sm-6 col-xs-12">
                     	<h5 class="contentTitle">Test your Skill</h5>
+                        <hr style="background:#333;height:1px;">
                         <p class="contentPara">'Telusko' is designed to enhance user's Skills and Knowledge. We believe that testing oneself is the best way to improve the Skills and Knowledge. So go ahead and answer a whole lot of tricky programming questions to help improve your skills.</p>
                         <a href="#" class="contentLinks">Test your best</a>
                     </div>
@@ -258,6 +256,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- Bootstrap minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/typed.js"></script>
 <script src="js/animation.js"></script>
 </body>
 </html>

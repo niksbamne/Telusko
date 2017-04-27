@@ -1,16 +1,8 @@
 // JavaScript Document
 
-var navHeader,Ypos;
-
-function YScroll(){
-	navHeader = $("#navbarHeader");
-	Ypos = window.pageYOffset;
-	
-	if(Ypos > 100){
-		navHeader.css("height","70px");
-	}else{
-		navHeader.css("height","80px");
-	}
-}
-
-window.addEventListener("scroll",YScroll);
+$(function(){
+		$(".element").typed({
+			 strings: ["import com.telusko.tusk.entity.Feedback;<br><br>public class FeedbackDao{<br>&nbsp;@Autowire<br>&nbsp;private SessionFactory sessionFactory;<br>&nbsp;@Transactional<br>&nbsp;&nbsp;public void addFeedback(Feedback theFeedback) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Session currentSession = sessionFactory.getCurrentSession();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;currentSession.save(theFeedback);<br><br>&nbsp;&nbsp;}<br>}"],
+			typeSpeed: 0
+		});
+	});

@@ -75,14 +75,8 @@
 	border:10px solid #fff;
 	border-radius:10px;
 }
-.typewriter p{
-	overflow:hidden;
-	white-space:nowrap;
-	line-height:25px;
-	margin:0 auto;
-	letter-spacing:.15em;
-	animation:typing 10s steps(100,end);
-	padding:10px;
+.element{
+	height:250px;
 }
 .contentLinks{
 	text-decoration:none;
@@ -105,10 +99,27 @@
 	color:#fff;
 }
 /*Animations*/
-/*Typing animation*/
-@keyframes typing{
-	from{width:0;}
-	to{width:100%;}
+/* animation for blinking cursor*/
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
 
 
@@ -131,6 +142,15 @@
 	top:10px;
 	left:25px;
 	font-size:14px;
+}
+
+
+}
+@media (max-width: 400px){
+	#learnVideo{
+	width: 250px;
+	margin:0;
+	padding:0;
 }
 }
 @media (min-width: 0px) and (max-width: 299px){
@@ -228,6 +248,9 @@
 		font-size:14px;
 		line-height:15px;
 	}	
+	.element{
+		height:auto;
+	}
 }
 @media (min-width:200px) and (max-width:340px){
 	#heroSection{
