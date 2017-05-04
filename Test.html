@@ -7,11 +7,9 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/master.css">
-<link rel="stylesheet" type="text/css" href="css/feedback.css">
-<link rel="stylesheet" type="text/css" href="css/jquery.rateyo.css">
+<link rel="stylesheet" type="text/css" href="css/test.css">
 
-
-<title>Telusko Learnings - Feedback</title>
+<title>Untitled Document</title>
 </head>
 
 <body>
@@ -42,59 +40,47 @@
         </div><!--End of navbarContainer-->
     </nav><!--End of nav-->
     
- <!--start of mainContent-->
-<div class="container-fluid" id="mainContent">
-	<div class="row">
-    	<h3 class="text-center">We need help. How can you help us?.</h3>
-    </div>
-	<div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1" id="formContainer">
-    	<form name="feedbackForm" id="feedbackForm" method="#" action="#" class="col-md-10 col-sm-10 col-xs-12 col-md-offset-1 col-sm-offset-1">
-        	<div class="dynamiclabel form-group">
-            	<input type="text" name="name" id="name" placeholder="your name.." class="form-control" autofocus>
-                <label for="name">Name</label>
-                <p id="emptyName"></p>
+    <!--Start of main content-->
+    <div id="mainContent" class="container-fluid">
+    	<div class="bigSpace">
+        	<div >
+            	<p id="clock" class="text-center"></p>
+                <audio id="ding">
+                	<source src="video_bg/Twinkle-sound-effect.mp3" type="audio/mpeg"/>
+                </audio>
             </div>
-            <div class="dynamiclabel form-group">
-            	<input type="email" name="email" id="email" placeholder="your email.." class="form-control">
-                <label for="email">Email</label>
-                <p id="emptyMail"></p>
+        </div>
+    	<div class="jumbotron">
+
+            <div class="well" id="question">
+            	<div class="row">
+                	<h3 class="text-center">Example question in java?</h3>
+                </div>
+                <hr>
+                <div class="row">
+                	<div class="col-md-8 col-md-offset-2">
+						<div class="row text-center">
+                        	<span class="col-md-4 col-md-offset-2"><input type="radio" name="answer" value="answer1">Answer 1</span>
+                            <span class="col-md-4 col-md-offset-2"><input type="radio" name="answer" value="answer2">Answer 2</span>
+                        </div>
+                        <div class="row text-center">
+                        	<span class="col-md-4 col-md-offset-2"><input type="radio" name="answer" value="answer3">Answer 3</span>
+                            <span class="col-md-4 col-md-offset-2"><input type="radio" name="answer" value="answer4">Answer 4</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="dynamiclabel form-group">
-            	<select class="form-control" name="regarding" id="regarding">
-                	<option>Select --</option>
-                    <option>Online Tutorial</option>
-                    <option>Website</option>
-                    <option>Navin Reddy</option>
-                </select>
-                <label for="regarding">Feedback Regarding</label>
-                <p id="emptyRegarding"></p>                
+        </div>
+    	<div class="bigSpace container">
+        	<div id="buttonContainer" class="col-md-6 col-md-offset-4">
+                <button type="button" id="prev">Previous</button>
+                <button type="button" id="next">Next</button>
+                <button type="button" id="end">End Test</button>
             </div>
-            <div class="form-group">
-            	<label>Do you have Code?.</label>
-            	<input type="radio" value="yes" name="code" id="yes">Yes
-                <input type="radio" value="No" name="code" id="no" checked>No
-            </div>
-             <div class="dynamiclabel form-group" id="codeContainer">
-            	<input type="text" name="code" id="code" placeholder="your code.." class="form-control">
-                <label for="code">Code</label>
-            </div>
-            <div class="dynamiclabel form-group" id="messageContainer">
-            	<textarea name="message" id="message" class="form-control" placeholder="your message .."></textarea>
-                <label for="message">Message</label>
-                <p id="emptyMessage"></p>                
-            </div>
-            <div class="form-group">
-            	<label for="rating">Overall Satisfaction</label>
-                <div id="rateYo"></div>
-            </div>
-           	<div id="buttonContainer">
-            	<button class="btn btn-primary" id="submitBtn">Submit</button>
-                <button class="btn btn-danger" id="resetBtn">Reset</button>
-            </div>
-        </form>
-    </div>
+        </div>
+    </div> <!--End of main content-->
     
-    <!--Start of loginModal-->
+     <!--Start of loginModal-->
     <div class="modal fade loginModal" tabindex="-1">
     	<div class="modal-dialog">
         	<div class="modal-content">
@@ -162,7 +148,6 @@
                 </div>
             </div>
         </div>
-    </div>
 </div><!--End of mainContent-->
 
 <!--Start of footer-->
@@ -216,9 +201,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- Bootstrap minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="js/feedback.js"></script>
-<script src="js/jquery.rateyo.min.js"></script>
-<script src="js/animation.js"></script>
 <script src="js/validate.js"></script>
+<script src="js/clock.js"></script>
 </body>
 </html>

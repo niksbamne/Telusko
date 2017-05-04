@@ -1,0 +1,39 @@
+/* CSS Document */
+#mainContent{
+	height:auto;
+}
+.bigSpace{
+	height:200px;
+}
+#clock{
+	line-height:300px;
+	color:#000;
+	font-size:25px;
+}
+#question{
+	background:#333;
+	color:#fff;
+}
+#question span{
+	padding: 15px 0px;
+	text-align:left;
+	font-size:14px;
+	font-weight:bold;
+}
+#buttonContainer button{
+	width:120px;
+	height:40px;
+	margin-right: 15px;
+	padding: 5px;
+	border: none;
+	font-weight:bold;
+	border-radius: 5px;
+}
+#prev,#next{
+	background:#498e2b;
+	color:#fff;
+}
+#end{
+	background:#666;
+	color:#fff;
+}

@@ -47,7 +47,7 @@
 		this.attr = this.options.attr;
 
 		// show cursor
-		this.showCursor = this.isInput ? false : this.options.showCursor;
+		//this.showCursor = this.isInput ? false : this.options.showCursor;
 
 		// text content of element
 		this.elContent = this.attr ? this.el.getAttribute(this.attr) : this.el.textContent;
